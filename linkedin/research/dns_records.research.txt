@@ -1,0 +1,19 @@
+- DNS Records (também chamados de Zone Files) são instruções que vivem em um DNS Server e fornecem informações sobre um domínio (ex.: qual o IP associado? Como lidar com requests?)
+- Ele são comandos para como lidar com DNS queries
+- É possível determinar um TTL de quanto tempo irá ficar em cache até que o DNS server precise verificar os records de novo
+- Records tem diversos tipos, eles sendo
+    - A (and AAAA)
+    - CNAME
+    - MX
+    - NS
+    - TXT
+- “A Record” (Abreviação de “Address Record”) também são conhecidos como “Host Records”
+- “A Record” tem o intuito de transformar um host name (ex.: victorgaudiot.com) em um endereço IPv4 (ex: 135.62.193.56).
+- “AAAA Records” é igual ao “A Records” mas mapeia para um endereço IPv6 (ex: 7fca:8194:4464:7961:78be:5342:e90e:34eb)
+- “CNAME” (Canonical Name) é basicamente um alias DNS. Por exemplo, podemos ter um CNAME www.exemplo.com apontando para app.exemplo.com. Também costuma ser usado para indicar para onde um subdomínio deve apontar.
+- “CNAME” também pode ser usado, por exemplo, com Vercel: ao invés de acessar myapp.vercel.com, podemos usar um domínio como awesomeapp.com (ou www.awesomeapp.com) apontando para ele.
+- “MX” (Mail Exchanger), indica quais servidores recebem emails para o domínio (ex: apontar para gmail).
+- Em um MX é possível definir uma prioridade (quanto menor o número maior a prioridade) para qual servidor de email deve acessar (útil para ter redundância)
+- “NS” (Name Server) indica aonde deve ir para saber mais sobre subdomínios. Então posso ter home.website.com, profile.website.com e shop.website.com. O NS irá ter a informação de onde pode ser encontrado o “A Records” para esses subdomínios
+- “TXT” pode ser usado para armazenar dados arbitrarios.
+- “TXT” também pode ser usado para verificar a propriedade de um domínio. Por exemplo, se eu criar um “TXT record” que tenha a chave valor “keybase-site-verification=random_jwt_token” quando acessar um serviço de terceiro ele saberá que eu realmente sou o dono do domínio.
