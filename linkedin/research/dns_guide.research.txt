@@ -1,0 +1,25 @@
+- Pedi ajuda ao chatGPT para saber quais são os melhores sites de provedores de domínio
+- Estou querendo comprar um domínio tanto para usar como site pessoal e também para o subdomínio do Fonli
+- Eu pensei em pegar um provedor brasileiro para que o preço fosse em Real e não tivesse grandes surpresas, mas o gpt disse que não faz sentido, já que esses domínio são muito reféns do dólar e acaba que o valor em real iria apenas ser a conversão do dólar
+- No fim eu comparei:
+    - Hostgator (U$57)
+    - Hostinger (U$60)
+    - Namecheap (U$45)
+    - GoDaddy (U$66)
+- Separar cada um dos pontos abaixo em um post diferente
+- Pontos a serem considerados
+    - Preço total e de renovação
+    - Controle de DNS (principalmente para subdomínio)
+        - Suporta records?
+        - Suporta CNAME?
+        - TTL configurável?
+    - Facilidade de integração
+        - UI simples
+        - Integração com serviços
+    - Facilidade de transferência
+        - Processo simples?
+        - Taxas escondidas?
+    - Segurança
+        - Proteção de WHOIS
+        - 2FA
+        - DNSSEC
