@@ -9,9 +9,15 @@
             "type": "Company"
         },
         {
+            "name": "Sezzle",
+            "url": "https://job-boards.greenhouse.io/sezzle?offices%5B%5D=4053111003&departments%5B%5D=4007834003",
+            "available_from": "2026-08-21",
+            "type": "Company"
+        },
+        {
             "name": "PostHog",
             "url": "https://posthog.com/careers",
-            "available_from": "2026-05-17",
+            "available_from": "2026-06-08",
             "type": "Company"
         },
         {
