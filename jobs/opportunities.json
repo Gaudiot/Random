@@ -1,0 +1,126 @@
+{
+    "applied_qtt": 1,
+    "last_updated": "2026-03-14",
+    "opportunities": [
+        {
+            "name": "Clipboard Health",
+            "url": "https://www.clipboardhealth.com/engineering",
+            "available_from": "2026-06-20",
+            "type": "Company"
+        },
+        {
+            "name": "PostHog",
+            "url": "https://posthog.com/careers",
+            "available_from": "2026-05-17",
+            "type": "Company"
+        },
+        {
+            "name": "Quinto Andar",
+            "url": "https://carreiras.quintoandar.com.br/vagas-abertas/",
+            "available_from": "2026-10-30",
+            "type": "Company"
+        },
+        {
+            "name": "Coinbase",
+            "url": "https://www.coinbase.com/pt-br/careers/positions?location=remote+brazil",
+            "available_from": "2026-09-05",
+            "type": "Company"
+        },
+        {
+            "name": "Job Direto",
+            "url": "https://jobdireto.com.br/job-search",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Wellfound",
+            "url": "https://wellfound.com/jobs",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Google",
+            "url": "https://www.google.com/about/careers/applications/jobs/results?employment_type=FULL_TIME&q=%22Software%20Engineer%22&has_remote=true&location=Brazil",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Hn Hiring",
+            "url": "https://hnhiring.com/locations/remote",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Stripe",
+            "url": "https://stripe.com/jobs/search?remote_locations=Latin+America--Brazil+Remote&remote_locations=North+America--US+Remote",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Buffer",
+            "url": "https://buffer.com/journey#open-roles",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Airbnb",
+            "url": "https://careers.airbnb.com/positions/?_departments=engineering&_where_you_work=brazil%2Cbrazil-remote&_workplace_type=live-and-work-anywhere",
+            "available_from": "2026-07-03",
+            "type": "Company"
+        },
+        {
+            "name": "Kraken",
+            "url": "https://jobs.ashbyhq.com/kraken.com?departmentId=5f67bd79-103b-4ac1-8d79-952b45ea47c9&employmentType=FullTime&locationId=0ae979f7-78d9-4e42-8cf1-831610586017",
+            "available_from": "2026-07-03",
+            "type": "Company"
+        },
+        {
+            "name": "Chainlink Labs",
+            "url": "https://chainlinklabs.com/open-roles",
+            "available_from": "2026-07-03",
+            "type": "Company"
+        },
+        {
+            "name": "ConsenSys",
+            "url": "https://consensys.io/open-roles?location=83560",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "GitLab",
+            "url": "https://about.gitlab.com/jobs/all-jobs/",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Automattic",
+            "url": "https://automattic.com/jobs/",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Zapier",
+            "url": "https://zapier.com/jobs#job-openings",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Doist",
+            "url": "https://doist.com/careers#open-roles",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "Lokalise",
+            "url": "https://lokalise.com/careers/#grnhse_app_section",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        },
+        {
+            "name": "HelpScout",
+            "url": "https://www.helpscout.com/company/careers/",
+            "available_from": "2026-05-29",
+            "type": "Company"
+        }
+    ]
+}
