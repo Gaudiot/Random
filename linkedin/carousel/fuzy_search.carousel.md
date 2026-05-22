@@ -50,33 +50,82 @@ It works so well that users now expect it in every app.
 
 ---
 
-# Slide 3 — The Algorithms
+# Slide 3 — Levenshtein
 
 ## Title
 
-### **The Algorithms Behind It**
+### **Levenshtein Distance**
 
 ## Body
 
-A few classic approaches power most fuzzy search systems.
+The classic algorithm behind most fuzzy search systems.
 
-* Levenshtein Distance
-  → counts how many insertions, deletions, or substitutions turn one word into another
-  → smaller distance = more similar
-  → solved with dynamic programming under the hood
+It counts how many edits turn one word into another:
 
-* Damerau-Levenshtein
-  → same idea, but also allows swapping adjacent letters
+* insertions
+* deletions
+* substitutions
 
-* N-Grams
-  → splits text into small chunks and compares overlap
-  → bigrams of `Helo` → [`he`, `el`, `lo`]
-  → bigrams of `Hello` → [`he`, `el`, `ll`, `lo`]
-  → lots of overlap = high similarity
+Smaller distance = more similar words.
+
+Example:
+`apple` → `aple`
+→ 1 deletion → distance of 1
+
+Under the hood it’s solved with dynamic programming.
 
 ---
 
-# Slide 4 — Libraries
+# Slide 4 — Damerau-Levenshtein
+
+## Title
+
+### **Damerau-Levenshtein**
+
+## Body
+
+A small twist on Levenshtein — but a meaningful one.
+
+It adds a fourth allowed operation:
+
+* transposing two adjacent letters
+
+Example:
+`form` → `from`
+
+* Levenshtein → distance of 2
+* Damerau-Levenshtein → distance of 1
+
+This matters because humans swap letters all the time when typing fast.
+
+---
+
+# Slide 5 — N-Grams
+
+## Title
+
+### **N-Grams**
+
+## Body
+
+A completely different approach: split text into small chunks and compare overlap.
+
+Example with bigrams (n=2):
+
+* `helo` → [`he`, `el`, `lo`]
+* `hello` → [`he`, `el`, `ll`, `lo`]
+
+Lots of overlap = high similarity.
+
+Great for:
+
+* longer strings
+* full-text search
+* situations where edit distance gets expensive
+
+---
+
+# Slide 6 — Libraries
 
 ## Title
 
@@ -98,7 +147,7 @@ For most projects, picking a library is the right call.
 
 ---
 
-# Slide 5 — The Trade-offs
+# Slide 7 — The Trade-offs
 
 ## Title
 
@@ -123,7 +172,7 @@ Tuning thresholds and ranking matters a lot.
 
 ---
 
-# Slide 6 — Scaling It Up
+# Slide 8 — Scaling It Up
 
 ## Title
 
@@ -141,15 +190,40 @@ A few ways to keep it snappy:
 * query optimization
   → limit returned items and cache frequent searches
 
-* dedicated search engines
-  → ElasticSearch supports fuzzy search out of the box
-  → great for big systems, but heavy to integrate
+* indexing strategies
+  → trigram or inverted indexes speed up lookups dramatically
 
-Start simple. Scale only when you need to.
+Start simple. Scale only when you actually need to.
 
 ---
 
-# Slide 7 — My Use Case
+# Slide 9 — Elasticsearch
+
+## Title
+
+### **When You Outgrow DIY**
+
+## Body
+
+Eventually, hand-rolled fuzzy search hits a wall.
+
+That’s where Elasticsearch shines:
+
+* fuzzy queries supported out of the box
+* tunable edit distance per query
+* built on top of Lucene → fast even on huge datasets
+* combines fuzzy match with ranking, filters, and analyzers
+
+The catch:
+
+* heavier to integrate
+* extra infrastructure to maintain
+
+Best for big systems where search quality is a core feature.
+
+---
+
+# Slide 10 — My Use Case
 
 ## Title
 
