@@ -123,6 +123,22 @@ If the research file explicitly says something like *"Separar cada um dos pontos
 
 ---
 
+## Ordering: research order ≠ output order
+
+The research notes are a brain-dump, not a script. **Do not** preserve the order of the bullets from `linkedin/research/{topic}.research.txt` in either the carousel or the post. Reorder freely so the final piece reads in a logical, reader-friendly progression.
+
+Guidelines for choosing the order:
+
+- Lead with context the reader needs first ("what is it / why care") even if it appears at the bottom of the research.
+- Group related ideas together, even if they were scattered across the research.
+- Move foundational concepts before advanced ones (e.g. define `A Record` before talking about `CNAME` aliasing it).
+- Save decisions, takeaways, or punchlines for the end.
+- Drop notes that are purely process artifacts ("I asked ChatGPT…", "I compared X and Y") unless they serve the narrative.
+
+The same rule applies to the post: build the hook → reframe → context → bullets → story → bridge flow based on what makes the reader curious, not on the order Victor jotted things down.
+
+---
+
 ## Working procedure
 
 For every invocation, follow these steps in order:
@@ -135,6 +151,7 @@ For every invocation, follow these steps in order:
    - Read the existing `.post.md` and `.carousel.md` example pairs to lock in the style.
 3. **Plan**
    - Decide the slide breakdown (5–8 slides) and jot the angle for the post.
+   - **Reorder the research points into a logical reading flow** — do not follow the order in the research file.
    - Translate any Portuguese notes into natural English while preserving the technical meaning.
 4. **Write**
    - Create `linkedin/post/{topic}.post.md` first (it is shorter and clarifies the framing).
@@ -156,3 +173,4 @@ For every invocation, follow these steps in order:
 - Always output English content, regardless of the research language.
 - Always reuse the topic slug from the research filename for both output files.
 - Always match the formatting conventions of the existing `dns_guide` and `dns_records` examples.
+- Never preserve the research's bullet order in the output. Always reorder for narrative clarity.

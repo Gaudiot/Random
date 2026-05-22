@@ -1,0 +1,23 @@
+- Fuzy-search é uma técnica de busca por palavras em um documento que se aproximem o suficiente de uma palavra-chave (ex.: palavra-chave: “victor”, match: “victor”, “vitor”, “victoria”, “viktor”, “vitorr”)
+- Em fuzy-search também consegue fazer match em case-insensitive, assim tanto “victor” quanto “VICTOR” irão ter match. Em abordagens mais simples que compara por exatidão iria dar como diferentes.
+- No dia-a-dia isso pode ser visto sendo usado em redes sociais, quando vamos pesquisar alguém no instagram ele consegue achar mesmo quando não é o resultado exato. Também pode ser usado para reduplicação de dados que não tem um atributo chave único. Também usados por SQL lookups para ajudar databases a achar registros mesmo sem ter certeza da pronuncia exata.
+- Esses algoritmos podem compensar por erros comuns de digitação de usuários, e também por problema de leitura em imagens de documentos.
+- Algumas soluções:
+    - Levenshtein Distance: Mede a distância entre strings, quanto menor a distância mais similares são as palavras. A distância é medida através da quantidade de inserções, remoções ou alterações de letras que são necessárias para tornar ambas palavras iguais. Por baixo dos panos isso é calculado com DP.
+    - Damerau-Levenshtein: Igual ao Levenshtein, mas também permite transposição de letras adjacentes como operação válida.
+    - N-Grams: Quebra o texto em vários pequenos pedaços para encontrar matches. Por exemplo, um bigram (n=2) separa “Helo” em [“he”, “el”, “lo”], e quando compara com “Hello” [“he”, “el”, “ll”, “lo”] nota que tem vários pedaços iguais, então a taxa de semelhança é alta.
+    - Pacotes de terceiros: Ao invés de implementar o algoritmo na mão pro seu projeto é possível se beneficiar de biblioteca de terceiros. Em python, por exemplo, temos a biblioteca “fuzzywuzzy” que ao comparar 2 frases retorna o quão semelhantes são de 0-100%. Em javascript temos Fuse.js.
+- Benefícios
+    - Visitantes online conseguem achar o que querem sem precisarem saber o nome exato (ex: cidades no google maps, pessoas no Facebook, produtos na amazon e etc)
+    - Melhora a UX
+    - Reduz frustração dos usuários. Ao invés de verem uma lista de “Nenhum resultado” podem ver uma lista com possíveis resultados.
+- Contras
+    - Às vezes pode retornar vários resultados, de forma que o usuário irá precisar passar por cada item da lista para encontrar o item que melhor se encaixa (podendo até mesmo estar no fim da lista)
+    - Fuzzy search só compensa por typos e misspellings. Algumas vezes precisando de algoritmos adicionais para encontrar sinônimos e semântica.
+    - Por trabalhar com semelhança, fuzzy-search também pode ser meio frustrante visto que ao pesquisar por um termo pode receber outros que possuem pouca ou nenhuma relação (ex: ao procurar “car” pode receber como resposta “air”, “card”, “can” e etc)
+- Irei usar o Fuzzy match no meu aplicativo Fonli. Assim quando o usuário inserir uma palavra que se aproxima o suficiente da resposta eu posso considerar que foi um acerto ao invés de exigir a resposta exata.
+- Fuzzy search ficou tão famoso e funciona tão bem que usuários já esperam isso em todas os seus aplicativos
+- Em sistemas modernos é possível otimizar o tempo de busca em fuzzy search adotando algumas medidas:
+    - Pre-computação: Salvar previamente termos comuns de busca e suas variantes
+    - Otimização de query: limitar quantidade de itens retornados, cache em buscas frequentes e etc
+- Uma search engine muito popular que costuma usar fuzzy search é o ElasticSearch. Mas devido a sua complexidade de integração é recomendado para sistemas grandes.
