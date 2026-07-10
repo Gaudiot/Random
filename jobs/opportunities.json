@@ -5,7 +5,7 @@
         {
             "name": "Clipboard Health",
             "url": "https://www.clipboardhealth.com/engineering",
-            "available_from": "2026-06-20",
+            "available_from": "2026-07-18",
             "type": "Company"
         },
         {
@@ -17,13 +17,19 @@
         {
             "name": "PostHog",
             "url": "https://posthog.com/careers",
-            "available_from": "2026-06-08",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Quinto Andar",
             "url": "https://carreiras.quintoandar.com.br/vagas-abertas/",
             "available_from": "2026-10-30",
+            "type": "Company"
+        },
+        {
+            "name": "Neon",
+            "url": "https://jobs.lever.co/neon?department=Engineering%20%26%20Security",
+            "available_from": "2026-07-13",
             "type": "Company"
         },
         {
@@ -47,7 +53,7 @@
         {
             "name": "Google",
             "url": "https://www.google.com/about/careers/applications/jobs/results?employment_type=FULL_TIME&q=%22Software%20Engineer%22&has_remote=true&location=Brazil",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
@@ -59,13 +65,13 @@
         {
             "name": "Stripe",
             "url": "https://stripe.com/jobs/search?remote_locations=Latin+America--Brazil+Remote&remote_locations=North+America--US+Remote",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Buffer",
             "url": "https://buffer.com/journey#open-roles",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
@@ -89,43 +95,289 @@
         {
             "name": "ConsenSys",
             "url": "https://consensys.io/open-roles?location=83560",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "GitLab",
             "url": "https://about.gitlab.com/jobs/all-jobs/",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Automattic",
             "url": "https://automattic.com/jobs/",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Zapier",
             "url": "https://zapier.com/jobs#job-openings",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Doist",
             "url": "https://doist.com/careers#open-roles",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "Lokalise",
             "url": "https://lokalise.com/careers/#grnhse_app_section",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
             "type": "Company"
         },
         {
             "name": "HelpScout",
             "url": "https://www.helpscout.com/company/careers/",
-            "available_from": "2026-05-29",
+            "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "ElevenLabs",
+            "url": "https://elevenlabs.io/careers?department=Engineering+%26+Product&location=Brazil",
+            "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "WorkOS",
+            "url": "https://workos.com/careers#open-positions",
+            "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "customer.io",
+            "url": "https://customer.io/careers#job-openings",
+            "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "Sourcegraph",
+            "url": "https://sourcegraph.com/jobs#job-list",
+            "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "Kake",
+            "url": "https://kake.co/jobs",
+            "available_from": "2026-07-27",
+            "type": "Company"
+        },
+        {
+            "name": "Sticker Mule",
+            "url": "https://www.stickermule.com/careers?location=remote",
+            "available_from": "2026-09-27",
+            "type": "Company"
+        },
+        {
+            "name": "37signals",
+            "url": "https://37signals.com/jobs/",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Aha",
+            "url": "https://www.aha.io/company/careers/current-openings",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Appcues",
+            "url": "https://www.appcues.com/careers#work-with-us",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Appwrite",
+            "url": "https://www.appwrite.careers",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Argyle",
+            "url": "https://ats.rippling.com/pt-BR/argyle/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Songtradr",
+            "url": "https://www.songtradr.com/careers",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Bandzoogle",
+            "url": "https://bandzoogle.com/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "BeBanjo",
+            "url": "https://bandzoogle.com/jobs",
+            "available_from": "https://www.bebanjo.com/company/careers",
+            "type": "Company"
+        },
+        {
+            "name": "Bitovi",
+            "url": "https://www.bitovi.com/about/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Bonsai",
+            "url": "https://apply.workable.com/hellobonsai/?lng=en",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Chesscom",
+            "url": "https://www.chess.com/jobs#open-roles",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Codesandbox",
+            "url": "https://codesandbox.io/careers",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Convert",
+            "url": "https://convert.recruit.charliehr.com/careers",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Datadog",
+            "url": "https://careers.datadoghq.com/remote/?remote%5B0%5D=Remote&parent_department_Engineering%5B0%5D=Engineering",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Discourse",
+            "url": "https://www.discourse.org/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "DuckDuckGo",
+            "url": "https://duckduckgo.com/hiring",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Epsy Health",
+            "url": "https://www.epsyhealth.com/careers",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Ergeon",
+            "url": "https://www.ergeon.com/careers/",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Eyeo",
+            "url": "https://eyeo.com/careers/#open-positions",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Fingerprint",
+            "url": "https://fingerprint.com/careers/jobs/",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "MailerLite",
+            "url": "https://www.mailerlite.com/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "MixMax",
+            "url": "https://www.mixmax.com/careers?hsCtaAttrib=158184435311#open-positions",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "MixRank",
+            "url": "https://app.dover.com/jobs/mixrank",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "OpenCraft",
+            "url": "https://opencraft.com/jobs/",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "PlexTV",
+            "url": "https://www.plex.tv/careers/",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Quora",
+            "url": "https://jobs.ashbyhq.com/quora?departmentId=f2fc32f2-ac96-4385-9b66-6ca7feb3e9f1",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Red Hat",
+            "url": "https://www.redhat.com/en/jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Revolut",
+            "url": "https://www.revolut.com/careers/?city=Brazil+-+Remote&team=Engineering",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Sardine",
+            "url": "https://www.sardine.ai/careers#open-positions",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Semaphore",
+            "url": "https://semaphore.io/hiring",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Skill Share",
+            "url": "https://apply.workable.com/skillshare/",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Sweet Rush",
+            "url": "https://www.sweetrush.com/join-us#current-openings",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "TestGorilla",
+            "url": "https://www.testgorilla.com/careers/#jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Toggl",
+            "url": "https://toggl.com/jobs/#jobs",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "WildBit",
+            "url": "https://www.wildbit.com/jobs",
+            "available_from": "2026-07-13",
             "type": "Company"
         }
     ]

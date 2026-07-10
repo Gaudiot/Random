@@ -1,32 +1,22 @@
-# Análise de Fit: Flutter Software Engineer Sênior - iFood
+# Análise de Fit: Senior Software Engineer - Backend
 
-**Nota: 7/10** — Likely pass: stack mobile principal (Flutter/Dart) muito bem coberta e diferenciais relevantes (CI/CD, Swift, ágil), mas faltam evidências explícitas em concorrência distribuída e modelagem de dados, que são requisitos obrigatórios.
+**Nota: 4/10** — likely reject: falta o requisito mandatório de linguagens JVM (Java/Kotlin) e a experiência de backend é parcial em relação aos 4+ anos exigidos com foco em backend.
 
 ## Pontos Fortes
-- Sólida experiência com Flutter e Dart: Flutter usado no Rei do Pitaco (mobile), no projeto pessoal Fonli e no app Movie Night publicado na Google Play Store; Flutter listado nas hard skills.
-- Sólida experiência em aplicações escaláveis e de alto desempenho: features iOS na plataforma de Identity Verification do Uber impactando milhões de usuários e APIs escaláveis no Fonli; impacto de negócio comprovado no Rei do Pitaco (+17% pagantes via A/B test).
-- Teste A/B: implementação direta de A/B test no Rei do Pitaco com resultado de negócio mensurável (+17% pagantes) — keyword explícito e recente.
-- Integração com APIs REST: REST APIs e gRPC listados nas hard skills; integração com APIs de clientes na Elife Monitor e com a TMDB API no Movie Night; design de APIs escaláveis no Fonli.
-- Conhecimento em CI/CD (diferencial): CI/CD listado explicitamente nas hard skills.
-- Ter atuado no modelo ágil (diferencial): Kanban e Scrum nas hard skills; atuação em ambiente Kanban na Elife Monitor.
-- Conhecimento em Swift (diferencial): atuação direta com Swift em features iOS no Uber.
+- Colaboração com times mobile/frontend cross-funcionais: CV mostra experiência direta como mobile dev (iOS/Flutter) trabalhando com backend em Uber e Rei do Pitaco, ideal para definir contratos de API com clientes mobile.
+- Mentalidade de ownership e impacto de negócio: liderou projeto compliance que evitou perda de $6M e entregou A/B test que aumentou base de usuários pagantes em 17% (Rei do Pitaco).
+- Experiência prática com IA para desenvolvimento de produto: projeto Fonli usa IA para gerar exercícios personalizados; na Elife aplicou técnicas de IA para melhorar conversational AI em chatbots.
 
 ## Pontos Médios
-- Bancos de dados relacional e NoSQL: PostgreSQL (relacional) usado na Elife Monitor e Firebase (NoSQL) listado nas skills; falta evidência explícita de modelagem ou queries complexas.
-- Clean Code & Design Patterns: não citados nominalmente (ATS não pegaria), mas inferíveis a partir de documentos de design técnico no Uber e arquitetura Backend-Driven UI no Rei do Pitaco.
-- Git: não mencionado de forma direta no texto do CV; o perfil ativo no GitHub indica uso recorrente, mas um ATS estrito não capturaria o keyword.
-- Testes automatizados, sistemas distribuídos e segurança (diferencial): o resumo cita "well-tested solutions" e há trabalho em Identity Verification (segurança) e em microsserviços/SDF no Uber, mas sem detalhar cobertura de testes ou profundidade em sistemas distribuídos.
+- 4+ anos como backend/full-stack com foco em backend: tem 5 anos totais de carreira, mas o foco majoritário é mobile (iOS/Flutter); experiência backend concreta soma ~2-3 anos entre Golang (Uber), TypeScript/PostgreSQL (Elife) e Backend-Driven UI (Rei do Pitaco).
+- APIs RESTful escaláveis: menciona REST APIs e gRPC em skills, com APIs escaláveis no projeto Fonli e backend em Golang na Uber, mas sem métricas de escala (RPS, latência, etc.).
+- Padrão Backend-for-Frontend (BFF) para mobile: contribuiu para arquitetura Backend-Driven UI no Rei do Pitaco e implementou Server-Driven Features (SDF) na Uber — conceitos próximos ao BFF, porém o termo "BFF" não aparece explicitamente.
+- Infraestrutura em nuvem AWS e deployment moderno: AWS listada em skills e CI/CD mencionado, mas o CV não detalha serviços AWS específicos (ECS, Lambda, RDS, etc.), IaC ou práticas de deployment/observabilidade.
 
 ## Pontos Fracos
-- Comunicação assíncrona e problemas de concorrência em sistemas distribuídos: não há menção explícita a filas, mensageria, race conditions ou padrões de concorrência no CV.
-- Modelagem de dados: o CV cita bancos usados, mas não descreve experiência em modelar esquemas, normalização ou desenho de estruturas de dados.
-- Paixão por desenvolvimento de software: não declarado explicitamente; projetos pessoais (Fonli, Movie Night) ajudam, mas o CV não tem uma frase que afirme isso de forma direta.
+- Proficiência em linguagens JVM (Java, Kotlin): nenhuma menção a Java ou Kotlin no CV; stack backend descrita é Golang, TypeScript/Node e PostgreSQL — gap crítico para um filtro ATS focado em JVM.
+- Observabilidade e eficiência operacional: CV não cita ferramentas concretas de observabilidade (Datadog, Prometheus, Grafana, tracing) nem práticas de SRE/monitoring em produção.
+- Testes de backend: skills lista "well-tested solutions" no resumo, mas não há evidência específica de práticas de teste em backend (unit, integration, contract testing).
 
 ## Preferível
-- Crashlytics ou Bugsnag: nenhuma ferramenta de monitoramento de crashes citada.
-- GraphQL: não mencionado (apenas REST e gRPC).
-- New Relic: não mencionado.
-- Logz: não mencionado.
-- Amplitude: não mencionado.
-- Testes de UI e integração: não há menção explícita a testes de UI ou testes de integração no CV.
-- Conhecimento em Kotlin: não citado (apenas Swift no lado mobile nativo).
+- Expertise demonstrável em BFF com redução de complexidade/melhoria de performance: evidência apenas indireta via Backend-Driven UI e SDF, sem métricas de redução de complexidade ou ganho de performance atribuídas ao padrão.

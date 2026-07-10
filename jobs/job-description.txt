@@ -1,34 +1,48 @@
-Flutter Software Engineer Sênior
-Brasil
+Cargo
 
-Nosso modo de fazer no time
+Senior Software Engineer - Backend
+Requisitos
 
-O iFood é a maior e mais inovadora empresa de tecnologia da América Latina, operando no Brasil. Somos conhecido pelo delivery, mas vamos além, temos muitas frentes de negócio como iFood Mercado, iFood Pago, nossa Fintech e muito mais. Nosso objetivo é Alimentar o Futuro do Mundo por meio de tecnologia. Como uma pessoa Engenheira de Software Frontend Sênior, você irá projetar, codificar, testar serviços que impactam as principais áreas do iFood.Além disso, você também nos ajudará a construir estruturas e ferramentas para identificar gargalos de desempenho, medindo, monitorando e otimizando nosso desempenho, para garantir alta disponibilidade, escalabilidade e tolerância a falhas, impactando diretamente a vida de milhões de pessoas, diariamente.
+•
+4+ anos de experiência como engenheiro backend ou full-stack com foco em backend
+•
+Proficiência em linguagens JVM (Java, Kotlin) e experiência com APIs RESTful escaláveis
+•
+Experiência com infraestrutura em nuvem (preferencialmente AWS) e práticas modernas de deployment
+•
+Familiaridade com padrão Backend-for-Frontend (BFF) para APIs otimizadas para mobile
+Responsabilidades
 
-Como Software Engineer, você irá projetar, codificar, testar e operar desenvolvendo e evoluindo aplicações que facilitem e façam parte do universo de nossos clientes, participando da criação de APIs, integrando com o backend e ajudando a priorizar a evolução.Você trabalhará muito próximo da equipe de Produtos, sendo responsável por identificar oportunidades e propor novos caminhos de evolução dos nossos produtos, sendo peça fundamental para a decisão das prioridades da nossa estratégia de produtos e negócio.Tenha a certeza de muito aprendizado e colaboração com uma equipe que equilibra teoria e prática para alavancar seu próprio crescimento profissional.Aqui você vai encontrar pessoas incríveis, com conhecimento de negócio e muita curiosidade, mergulhando nos dados para trazer as melhores respostas e exercendo papel fundamental na busca pelo nosso sonho em comum: Alimentar o Futuro do Mundo.
+•
+Projetar, construir e operar serviços backend escaláveis e APIs para aplicações mobile
+•
+Garantir confiabilidade, escalabilidade e performance dos serviços, incluindo deployment e monitoramento em AWS
+•
+Colaborar com engenheiros mobile para definir contratos de API e entregar experiências de alta performance
+•
+Impulsionar boas práticas de backend em testes, observabilidade e eficiência operacional
+No dia a dia você vai...
 
-Seu Cardápio Diário
+Desenvolver e manter APIs e serviços backend escaláveis que alimentam aplicações mobile de um marketplace de dois lados, trabalhando em estreita colaboração com o time mobile baseado no Brasil e parceiros de engenharia nos EUA. Você será responsável por garantir a confiabilidade, performance e escalabilidade dos sistemas através de deployment, monitoramento e otimização contínua em AWS, enquanto implementa boas práticas de testes e observabilidade.
+Benefícios
 
- 
+✓
+Salário: $6.000 - $7.000 USD mensais
+✓
+Modelo de trabalho remoto-first com flexibilidade
+✓
+Seguro saúde, dental, visão e suporte de saúde mental
+✓
+15 dias de PTO + 8 feriados pagos (aumentando para 20 após 2 anos)
+✓
+Equipamento de trabalho (Mac ou PC, monitor, teclado e mouse)
+✓
+Programa de referência com bônus
+Você vai se destacar se...
 
-Trabalhar em equipe com profissionais de Tech, Produto e Design;
-Participar ativamente na sugestão e elaboração das melhores práticas/soluções para o aplicativo, colaborar com a definição de conceitos como guias de estilo de codificação para todo o projeto, além de ser responsável pela condução das pocs;
-Desenvolvimento de aplicativos em Flutter respeitando o layout do Figma;
-Criar soluções inovadoras e orientadas para o desempenho
-Reforçar a qualidade durante a revisão de código e as práticas de manutenção;
-Atuar nos problemas de desempenho em aplicativos e gargalos em faixas de CI;
-Integração via APIs e escala componentes com eficiência por meio de ajustes e/ou grandes refatorações.
-Ingredientes que buscamos
-
-Ser uma pessoa apaixonada por desenvolvimento de software;
-Sólida experiência na construção de aplicações escaláveis ​​e de alto desempenho;
-Sólida experiência com Flutter e Dart;
-Conhecimento em Clean Code & Design Pattern, Teste A/B e Git;
-Experiência com integração APIs REST, comunicação assíncrona e problemas de concorrência em sistemas distribuídos;
-Bancos de dados relacional e NoSQL, queries e experiência com modelagem de dados.
-Será um diferencial:
-Testes automatizados, sistemas distribuídos e conceitos de segurança no desenvolvimento;
-Experiência com crashlytics ou bugsnag, graphql, New Relic, Logz, Amplitude, teste UI e integração;
-Conhecimento em CI/CD;
-Conhecimento em Kotlin e Swift;
-Ter atuado no modelo ágil.
+★
+Demonstrar expertise em padrão Backend-for-Frontend (BFF) e design de APIs otimizadas para clientes mobile, reduzindo complexidade e melhorando performance
+★
+Ter experiência prática com ferramentas de IA para desenvolvimento, monitoramento ou automação, alinhado com a visão AI-native da empresa
+★
+Mostrar mentalidade de ownership forte com histórico de trabalho colaborativo em ambientes cross-funcionais com times de mobile/frontend

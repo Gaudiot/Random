@@ -115,11 +115,11 @@ def start(date, return_date):
     """
     # Round trip: CGH->REC e GRU->REC, todos os builders exceto Skiplagged
     # for origin in ["CGH", "GRU"]:
-    for origin in ["CGH"]:
+    for origin in ["REC"]:
         for name, builder in URL_BUILDERS:
             if name == "Skiplagged":
                 continue
-            url = builder(origin, "REC", "Round trip", date, return_date)
+            url = builder(origin, "CGH", "Round trip", date, return_date)
             if url:
                 open_flight_tab(url)
                 time.sleep(1)
@@ -127,8 +127,9 @@ def start(date, return_date):
 
     # One way, na ordem: CGH->REC, GRU->REC, (cada um com todos os builders)
     one_way_routes = [
-        ("CGH", "REC"),
+        # ("CGH", "REC"),
         # ("GRU", "REC"),
+        ("REC", "CGH"),
     ]
     for origin, destiny in one_way_routes:
         for name, builder in URL_BUILDERS:
@@ -141,8 +142,9 @@ def start(date, return_date):
 
     # One way, na ordem: REC->CGH, REC->GRU (cada um com todos os builders)
     one_way_routes = [
-        ("REC", "CGH"),
+        # ("REC", "CGH"),
         # ("REC", "GRU"),
+        ("REC", "CGH"),
     ]
     for origin, destiny in one_way_routes:
         for name, builder in URL_BUILDERS:
