@@ -31,15 +31,30 @@ def calcula_tempo_faltante(data_atual, data_disponivel):
 
 open_browser = open_in_safari
 
+BATCH_SIZE = 10
+
 # Lista para armazenar as empresas cujas URLs foram abertas e que são do tipo "Company"
 opened_company_jobs = []
+opened_in_batch = 0
+stopped_early = False
 
 for job in jobs:
     available_date = datetime.strptime(job["available_from"], "%Y-%m-%d").date()
 
     if today >= available_date:
+        if opened_in_batch >= BATCH_SIZE:
+            resposta = input(
+                f"\n{BATCH_SIZE} páginas abertas. Abrir as próximas {BATCH_SIZE}? (Y/n): "
+            ).strip().lower()
+            if resposta not in ("", "y"):
+                print("Interrompendo a abertura de novas páginas.")
+                stopped_early = True
+                break
+            opened_in_batch = 0
+
         print(f"Abrindo: {job['name']}")
         open_browser(job["url"])
+        opened_in_batch += 1
         if job["type"] == "Company":
             opened_company_jobs.append(job)
     else:

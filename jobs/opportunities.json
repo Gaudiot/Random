@@ -45,6 +45,18 @@
             "type": "Job Board"
         },
         {
+            "name": "Na Gringa",
+            "url": "https://www.nagringa.dev",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
+            "name": "Job Copilot",
+            "url": "https://app.jobcopilot.com/copilot",
+            "available_from": "1999-01-13",
+            "type": "Job Board"
+        },
+        {
             "name": "Wellfound",
             "url": "https://wellfound.com/jobs",
             "available_from": "1999-01-13",
@@ -64,8 +76,38 @@
         },
         {
             "name": "Stripe",
-            "url": "https://stripe.com/jobs/search?remote_locations=Latin+America--Brazil+Remote&remote_locations=North+America--US+Remote",
+            "url": "https://stripe.com/jobs/search?remote_locations=Latin+America--Brazil+Remote",
             "available_from": "2026-07-07",
+            "type": "Company"
+        },
+        {
+            "name": "Tractian",
+            "url": "https://careers.tractian.com/jobs?location=Brazil&workType=remote&department=Software+Development",
+            "available_from": "2026-09-07",
+            "type": "Company"
+        },
+        {
+            "name": "Binance",
+            "url": "https://www.binance.com/en/careers/department?name=Engineering&job=",
+            "available_from": "2026-09-07",
+            "type": "Company"
+        },
+        {
+            "name": "Caju",
+            "url": "https://caju.gupy.io",
+            "available_from": "2026-09-07",
+            "type": "Company"
+        },
+        {
+            "name": "Incognia",
+            "url": "https://www.incognia.com/careers",
+            "available_from": "2026-09-07",
+            "type": "Company"
+        },
+        {
+            "name": "Capgemini",
+            "url": "https://www.capgemini.com/careers/join-capgemini/job-search/?page=1&size=11&country_code=pt-br&location=Recife&professional_communities=Software+Engineering",
+            "available_from": "2026-09-07",
             "type": "Company"
         },
         {
@@ -214,8 +256,8 @@
         },
         {
             "name": "BeBanjo",
-            "url": "https://bandzoogle.com/jobs",
-            "available_from": "https://www.bebanjo.com/company/careers",
+            "url": "https://www.bebanjo.com/company/careers",
+            "available_from": "2026-07-13",
             "type": "Company"
         },
         {
@@ -378,6 +420,60 @@
             "name": "WildBit",
             "url": "https://www.wildbit.com/jobs",
             "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Proxify",
+            "url": "https://talent.proxify.io",
+            "available_from": "2027-01-13",
+            "type": "Company"
+        },
+        {
+            "name": "Better Engineer",
+            "url": "https://app.betterengineer.com",
+            "available_from": "2026-07-13",
+            "type": "Company"
+        },
+        {
+            "name": "Baires Dev",
+            "url": "https://talent.bairesdev.com",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Blue Light",
+            "url": "https://jobs.lever.co/bluelightconsulting?commitment=Full-Time&department=Engineering&team=Software%20Development&workplaceType=remote&location=São%20Paulo%2C%20Brazil",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Speechify",
+            "url": "https://speechify.com/careers/?srsltid=AfmBOoofqqbV-UnWtaTcJyax7q1hNqBsB_6SRbs7W6qzZVyjq6PzWO2v#open-positions",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Wellhub",
+            "url": "https://job-boards.greenhouse.io/gympass?gh_src=709aee8b2us&departments%5B%5D=4007021002&offices%5B%5D=4038139002&offices%5B%5D=4004045002",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Space Inch",
+            "url": "https://apply.workable.com/spaceinch/",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Loft",
+            "url": "https://loft.teamtailor.com/jobs?query=&role=Engineering&location=Remoto",
+            "available_from": "2026-08-13",
+            "type": "Company"
+        },
+        {
+            "name": "Enjoei",
+            "url": "https://enjoei.inhire.app/vagas/",
+            "available_from": "2026-08-13",
             "type": "Company"
         }
     ]

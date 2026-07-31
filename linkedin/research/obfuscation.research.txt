@@ -1,0 +1,12 @@
+- Obfuscation é uma ferramenta para dificultar a leitura do código
+- Não é o mesmo que criptografia pois não precisa de chave para descriptografar
+- Mesmo usando ofuscação o código continua funcional, só dificulta muito uma leitura e compreensão humana
+    - Isso é benéfico para evitar engenharia reversa
+    - Protegere regra de negócios proprietário
+    - Desencoraja que tentem fazer fraudes client-side
+- Isso não torna o app mais seguro, continua não sendo justificado manter informações sigilosas (API keys e etc) no client-side
+- Também pode ser usado por hackers para esconder código malicioso
+- Para fazer em Flutter:
+    - Em ios execute: flutter build ipa --obfuscate --split-debug-info=build/symbols/ios
+    - Em android execute: flutter build appbundle --obfuscate --split-debug-info=build/symbols/android
+- Ofuscação não é suficiente, devem também ser feitas validações em server-side, assim como autenticação, rate limit e etc

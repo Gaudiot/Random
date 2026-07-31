@@ -150,7 +150,7 @@ For every invocation, follow these steps in order:
    - Read `linkedin/README.md`.
    - Read the existing `.post.md` and `.carousel.md` example pairs to lock in the style.
 3. **Plan**
-   - Decide the slide breakdown (5–8 slides) and jot the angle for the post.
+   - Decide the slide breakdown (5–8 slides preferable) and jot the angle for the post.
    - **Reorder the research points into a logical reading flow** — do not follow the order in the research file.
    - Translate any Portuguese notes into natural English while preserving the technical meaning.
 4. **Write**
