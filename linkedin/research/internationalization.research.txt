@@ -1,0 +1,109 @@
+- Internacionalização (por muitas vezes chamado de i18n) em aplicativos mobile é o ato de tornar um aplicativo mais acessível de forma a suportar diversas linguagens (ex: inglês, português, francês e etc)
+- Não se limita a textos. Também pode se extender para horários (se ajustar ao fuso do usuário), formato monetário, formato de data e etc.
+- Em alguns idiomas é usado o RTL (Rigth-to-left), ou seja, ao contrário do ocidente que normalmente escreve da esquerda para direita (LTR), o conteúdo ficará invertido.
+- Existe uma diferença entre i18n (internationalization) e l10n (localization). i18n é o trabalho do engenheiro de software de construir um aplicativo que permita esse suporte a diversas regiões, garantindo que a aplicação possa mudar para RTL se necessário, remover strings que estavam hard-coded e mostradores de preço dinâmicos para a região do usuário. Dessa forma não é necessário deixar hard-coded para cada idioma. l10n é o trabalho feito para ajustar o conteúdo para a região, muitas vezes pode ser apenas fazer a tradução de um texto, mas a responsabilidade também se expande para entender quais elementos visuais fazem sentido para aquela região, formatação de data e horário e etc.
+- Em muitos casos i18n e l10n são usados como se fossem a mesma coisa visto os significados parecidos.
+- É interessante que seja realizado o i18n desde cedo pare que fique mais fácil de expandir o produto para outras regiões no futuro. E i18n costuma ser visto como um custo único, uma vez feito pouca manutenção terá de ser realizada. Aqui chaves serão definidas para serem usadas na aplicação, por exemplo, ao invés de fazer Text(“Welcome”) será feito Text(t.welcome), que quando em inglês irá gerar o equivalente a Text(“Welcome”) e quando em português será equivalente a Text(“Bem-vindo”)
+- Um exemplo de diferença entre as equipes de i18n e l10n. A equipe de l10n está criado o suporte para árabe, mas percebe que os textos estão sendo exibidos em LTR ao invés de RTL, neste caso irão bloquear a liberação da região até que a equipe de desenvolvedores do i18n altere o código para ter suporte para RTL.
+- O trabalho de l10n é feito após o de i18n. E há diversas formas de tornar mais eficiente o trabalho de l10n
+    - Criar arquivos de resource separadamente para cada idioma, mantendo separado do produto e podendo importar e exportar informação sem prejudicar o código.
+    - Seguir convenções para garantir que não existam duas chaves mapeando a mesma frase.
+    - Chaves com nome declarativo.
+- Tanto i18n quanto l10n agregam para globalization (g11n), ou seja, pelo intuito de expandir as operações em novos mercados.
+- Como estou desenvolvendo o Fonli, minha aplicação mobile para aprendizado de idiomas, decidi desde cedo fazer i18n como parte da aplicação, hoje tem suporte tanto para português quanto inglês (visto que meu mercado principal é o Brasil e inglês é um padrão de mercado), mas pretendo expandir em breve à medida que fizer sentido.
+- Deixar para fazer i18n mais tarde no projeto pode causar muita dor de cabeça visto vários detalhes que podem ficar para trás (ex: strings hardcoded, ajuste de texto para RTL, ícones fixos e etc). Por experiência própria apesar de ser um trabalho extra atualmente existem muitas ferramentas que ajudam a fazer isso mais fácil, então recomendo fazer desde cedo. Caso contrário, pode se tornar um débito técnico muito rápido quando o CEO decide que quer lançar o produto na Alemanha, Japão e Rússia no próximo semestre.
+- Um ganho que vem de bandeja no Flutter: por padrão o framework só entrega localização em inglês americano, mas ao adicionar o flutter_localizations os widgets do próprio Flutter já vêm traduzidos (date picker, menu de seleção de texto, tooltips, botões de diálogo) e o RTL já passa a ser aplicado, sem você escrever uma linha de tradução. Quem faz isso são os delegates globais: o GlobalWidgetsLocalizations.delegate define a direção padrão do texto (LTR ou RTL) e o GlobalMaterialLocalizations.delegate junto do GlobalCupertinoLocalizations.delegate fornecem as strings do framework.
+- A equipe do Flutter tem uma documentação oficial sugerindo como a internacionalização pode ser realizada, recomendo dar uma lida . Mas irei trazer aqui também como fazer.
+    - Teremos que adicionar algumas dependências, então execute “flutter pub add flutter_localizations --sdk=flutter” e “flutter pub add intl:any”
+    - Ainda no pubspec.yaml adicione “generate: true” à propriedade “flutter”
+    - Apesar de não ser obrigatório, também fortemente recomendo fazer um arquivo l10n.yaml na raiz do projeto, onde ficará configurada a geração de strings. Aqui está o template que eu uso e venho gostando:
+* arb-dir: lib/l10n
+* output-dir: lib/l10n/output
+* template-arb-file: app_en.arb
+* output-localization-file: app_localizations.dart
+* preferred-supported-locales: ["en"]
+* nullable-getter: false
+* untranslated-messages-file: lib/l10n/output/untranslated_messages.txt
+    - Precisamos agora fazer o nosso primeiro arquivo .arb. Os arquivos .arb é onde ficam armazenadas as strings da aplicação, e o formato do nome do arquivo é “app_{{ct}}.arb” onde ct é o código ISO2 do idioma (eis: app_en.arb, app_pt.arb, app_fr.arb). Esses arquivos ficam todos localizados em “lib/l10n”
+    - Você também pode fazer arquivos mais direcionados a um idioma, o português por exemplo tem pt_BR e pt_PT. O l10n do Flutter nos obriga a ter um .arb base do idioma (neste caso um "app_pt.arb"), mas podemos criar uma variação para o pt_PT criando um "app_pt_PT.arb". Isso também seria válido para fazer um "app_en_UK.arb"
+    - Os arquivos .arb se parecem muito com JSONs, veja o template abaixo para app_en.arb: 
+* {
+*   "@@locale": "en",
+*   "helloWorld": "Hello World!",
+*   "@helloWorld": {
+*     "description": "The conventional newborn programmer greeting"
+*   }
+* }
+    - Se quiser localizar para português fará um arquivo app_pt.arb que é muito parecido, mas o @@locale ficará com o ISO2 do idioma e as chaves ficam no novo idioma. Vale ressaltar que o @chave é usado apenas para descrição da chave. Não é algo obrigatório mas o Flutter dispara um alerta caso não tenha.
+    - Com os arquivos .arb feito podem ser gerado os arquivos equivalentes em .dart para serem usados na aplicação, e isso acontece executando “flutter gen-l10n”.
+        - Caso algum dos .arb esteja faltando chave será informado no arquivo untranslated_messages.txt definido no l10n.yaml.
+    - Com as dependências instaladas e o primeiro arquivo .arb feito iremos modificar o MaterialApp do arquivo main.dart e ficará algo parecido com o print (irei inserir código depois)
+    - Note que o AppLocalizations que foi gerado automaticamente já fornece o “localizationsDelegates” e “supportedLocales”.
+    - O localeResolutionCallback informa à aplicação qual localização deve aplicar dado o locale que foi identificado pelo sistema.
+    - Agora para usar a localização que geramos nos nossos widgets fazemos “Text(AppLocalizations.of(context)!.helloWorld)”
+    - Também é possível fazer strings dinâmicas
+    - Caso só queira inserir o texto pode criar a seguinte entrada no .arb
+* "hello": "Hello {userName}",
+* "@hello": {
+*   "description": "A message with a single parameter",
+*   "placeholders": {
+*     "userName": {
+*       "type": "String",
+*       "example": "Bob"
+*     }
+*   }
+* }
+    - Também pode fazer valores singular e plural
+* "nWombats": "{count, plural, =0{no wombats} =1{1 wombat} other{{count} wombats}}",
+* "@nWombats": {
+*   "description": "A plural message",
+*   "placeholders": {
+*     "count": {
+*       "type": "num",
+*       "format": "compact"
+*     }
+*   }
+* }
+    - Pode fazer match baseado em string (case sensitive), isso é útil para frases personalizadas dado o gênero do usuário
+* "pronoun": "{gender, select, male{he} female{she} other{they}}",
+* "@pronoun": {
+*   "description": "A gendered message",
+*   "placeholders": {
+*     "gender": {
+*       "type": "String"
+*     }
+*   }
+* }
+    - Mensagens com números e valores monetários. Existem diversas formatações, veja a documentação para o que melhor se encaixa para você
+* "numberOfDataPoints": "Number of data points: {value}",
+* "@numberOfDataPoints": {
+*   "description": "A message with a formatted int parameter",
+*   "placeholders": {
+*     "value": {
+*       "type": "int",
+*       "format": "compactCurrency",
+*       "optionalParameters": {
+*         "decimalDigits": 2
+*       }
+*     }
+*   }
+* }
+    - Por fim lidar com data
+* "helloWorldOn": "Hello World on {date}",
+* "@helloWorldOn": {
+*   "description": "A message with a date parameter",
+*   "placeholders": {
+*     "date": {
+*       "type": "DateTime",
+*       "format": "yMd"
+*     }
+*   }
+* }
+
+- Apesar do Flutter lidar com a localização, para iOS também é necessário informar no app bundle quais os idiomas suportados para que apareça corretamente na App Store.
+    - Abra o seu iOS/runner.xcodeproj no Xcode
+    - Na navegação escolha o Runner e selecione a aba de “info” no editor do projeto.
+    - Na seção de localizações clique em “Add” (ou “+”) e adicione os idiomas suportados. Quando for requisitado escolher arquivos de referência simplesmente aperte “Finish”
+    - O Xcode automaticamente irá gerar um .strings vazio e atualizar arquivos necessário. Isso fará com que a App Store determine quais idiomas o app suporta
+- A documentação também menciona que se quiser existem formas mais caseiras de ter o mesmo resultado sem depender de arquivos .arb e até mostra uns exemplos.
+- A documentação tem muita mais informação, e não é o intuito deste post ser uma cópia, recomendo fortemente dar uma lida.
