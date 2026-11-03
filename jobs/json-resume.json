@@ -1,0 +1,211 @@
+{
+    "basics": {
+        "name": "Victor Gaudiot",
+        "label": "Mobile Software Engineer | iOS",
+        "email": "gaudiot.dev@gmail.com",
+        "phone": "+55 81 99665-1117",
+        "summary": "Software Engineer with 5+ years of experience in different industries such as mobility, cyber security, and igaming. Main technologies include Swift, SwiftUI, UIKit, XCTest, Flutter, and AI tools . Currently serving as an iOS Software Engineer at Uber, working on the Identity Verification team, a highly critical workflow responsible for verifying +40M users daily, identifying and preventing fraudsters, ensuring a frictionless verification flow, defining new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers. Regarding soft skills, usually described by co-workers as a very proactive team player, with great communication skills, besides a fast learner with a high level of attention to details, always focused on high-impact results. Notable achievements include reducing Server-Driven UI development time by ~60% (from ~5 to ~2 working days) by creating an AI agent skill that uses Figma MCP to turn designs into code, leveraging a harness to enforce codebase standards and generate automated tests, thus accelerating feature delivery while maintaining code quality.",
+        "location": {
+            "city": "Sao Paulo",
+            "countryCode": "BR"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "victorgaudiot",
+                "url": "https://www.linkedin.com/in/victorgaudiot/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Uber",
+            "location": "Sao Paulo, SP, Brazil (Hybrid)",
+            "description": "Global technology company operating one of the world's leading mobility, delivery, and logistics platforms.",
+            "position": "iOS Software Engineer | Mobile",
+            "startDate": "2025-03",
+            "endDate": "Present",
+            "summary": "Currently serving as an iOS Software Engineer at Uber, working on the Identity Verification team, a highly critical workflow responsible for verifying +40M users daily, identifying and preventing fraudsters, ensuring a frictionless verification flow, defining new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers.",
+            "highlights": [
+                "Reduced by ~60% (from ~5 to ~2 days) the Server-Driven UI development time by developing an AI agent skill integrated with Figma MCP and a testing harness to autonomously implement designs in Golang while following codebase standards.",
+                "Reduced by ~40% (from ~5 to ~3 days) the verification flow development time by designing a modular, backend-driven verification framework using Swift, SwiftUI, and Golang , enabling faster development and easier maintenance of verification flows.",
+                "Increased by ~6% (from ~153k to ~162k users) the user verification completion by redesigning the verification journey to reduce user friction, using Golang, Swift, and SwiftUI , with Grafana monitoring during a controlled rollout."
+            ],
+            "keywords": [
+                "Swift",
+                "SwiftUI",
+                "Golang",
+                "Server-Driven UI",
+                "AI agents",
+                "Figma MCP",
+                "Automated tests",
+                "Grafana"
+            ]
+        },
+        {
+            "name": "Rei do Pitaco",
+            "location": "Sao Paulo, SP, Brazil (Remote)",
+            "description": "One of Brazil's leading homegrown iGaming and sports entertainment companies, originally built as the country's largest daily fantasy sports platform.",
+            "position": "Software Engineer | Mobile",
+            "startDate": "2024-06",
+            "endDate": "2025-03",
+            "highlights": [
+                "Prevented +$6M in potential losses by taking technical ownership of a critical regulatory project, coordinating engineers, breaking down milestones into tasks, and working with Product and Legal teams to prioritize requirements using Next.js, React, TypeScript, and Flutter .",
+                "Increased by ~20% (from ~123k to ~148k users) the paying user base by proactively identifying and redesigning the product discovery experience, making it easier for users to find relevant content using Next.js, React, TypeScript, and Flutter .",
+                "Reduced by ~43% (from ~7 to ~4 days) the feature delivery time by implementing a Server-Driven UI framework in Flutter , allowing engineers to launch, modify, or remove UI features remotely with fast rollbacks and no app store resubmissions."
+            ],
+            "keywords": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Flutter",
+                "Server-Driven UI"
+            ]
+        },
+        {
+            "name": "Elife Monitor",
+            "location": "Recife, PE, Brazil (Remote)",
+            "description": "Global customer experience and market intelligence company specializing in Social CRM, conversational solutions, and digital customer engagement.",
+            "position": "Software Developer | Backend",
+            "startDate": "2022-07",
+            "endDate": "2024-06",
+            "highlights": [
+                "Increased by ~5% (from 4.5 to 4.7 out of 5) the NPS score by implementing a new chatbot version which uses LangChain and AI tools to fetch user and company information to provide a more custom service , using Node.js, TypeScript, JavaScript, and AI tools .",
+                "Fixed a critical bug that caused users to receive duplicate WhatsApp bulk messages by implementing idempotency keys to prevent duplicate message registrations and deliveries, using Node.js, TypeScript, JavaScript, and MongoDB ."
+            ],
+            "keywords": [
+                "Node.js",
+                "TypeScript",
+                "JavaScript",
+                "LangChain",
+                "AI tools",
+                "MongoDB",
+                "Idempotency"
+            ]
+        },
+        {
+            "name": "Tempest Security Intelligence",
+            "location": "Recife, PE, Brazil (Hybrid)",
+            "description": "One of Brazil's leading cybersecurity companies, providing digital security, fraud prevention, managed security, and consulting solutions",
+            "position": "Software Developer | Backend",
+            "startDate": "2022-01",
+            "endDate": "2022-07",
+            "highlights": [
+                "Increased by ~4% (from $33.8M to $35.2M) the annual gross revenue by building an automated quote generation service in Golang , allowing customers to request project estimates without human assistance."
+            ],
+            "keywords": [
+                "Golang",
+                "Automation",
+                "Quote generation"
+            ]
+        },
+        {
+            "name": "UFPE",
+            "location": "Recife, PE, Brazil",
+            "description": "Top-5 Computer Science program in Brazil and a leading technology and research center in Latin America.",
+            "position": "Software Developer | Instructor",
+            "startDate": "2021-02",
+            "endDate": "2022-01",
+            "highlights": [
+                "Performed multiple presentations on data structures and algorithms, from basic to complex themes, thus helping the team learn more efficient approaches to apply on their activities.",
+                "Conducted code reviews to enforce engineering standards, improve maintainability, and catch potential defects before reaching production."
+            ],
+            "keywords": [
+                "Data structures",
+                "Algorithms",
+                "Code reviews",
+                "Engineering standards"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Federal University of Pernambuco",
+            "area": "Computer Science",
+            "studyType": "Bachelor",
+            "location": {
+                "countryCode": "BR"
+            }
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Cloud Practitioner",
+            "issuer": "AWS"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Technical skills",
+            "level": "Proficient",
+            "keywords": [
+                "Swift",
+                "SwiftUI",
+                "UIKit",
+                "XCTest",
+                "Flutter",
+                "Dart",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Node.js",
+                "Git/GitHub",
+                "software development best practices (SOLID, Clean Code, Clean Architecture, MVC, MVVM)",
+                "Agile (Scrum, Kanban)",
+                "AI tools (Cursor, Claude, Codex)",
+                "TDD",
+                "gRPC",
+                "automated tests (unit, integration, end-to-end)",
+                "RESTful API"
+            ]
+        },
+        {
+            "name": "Technical skills",
+            "level": "Intermediate",
+            "keywords": [
+                "Firebase",
+                "AWS services (EC2, S3)",
+                "Java",
+                "Kotlin",
+                "SQL",
+                "PostgreSQL",
+                "Play Store",
+                "App Store",
+                "Figma",
+                "Golang",
+                "LangChain"
+            ]
+        },
+        {
+            "name": "Technical skills",
+            "level": "Beginner",
+            "keywords": [
+                "NoSQL",
+                "MongoDB",
+                "Redis",
+                "GraphQL",
+                "Devops (GitHub Actions, CI/CD)",
+                "Docker",
+                "BDD",
+                "AWS services (DynamoDB, IAM, ELB)"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Advanced / Fluent / C1"
+        },
+        {
+            "language": "Portuguese",
+            "fluency": "Native / Advanced / Fluent"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Basic communication / Fluent reading"
+        }
+    ]
+}
