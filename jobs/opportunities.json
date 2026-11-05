@@ -75,12 +75,6 @@
             "type": "Job Board"
         },
         {
-            "name": "Stripe",
-            "url": "https://stripe.com/jobs/search?remote_locations=Latin+America--Brazil+Remote",
-            "available_from": "2026-08-23",
-            "type": "Company"
-        },
-        {
             "name": "Tractian",
             "url": "https://careers.tractian.com/jobs?location=Brazil&workType=remote&department=Software+Development",
             "available_from": "2026-09-07",
@@ -165,12 +159,6 @@
             "type": "Company"
         },
         {
-            "name": "Lokalise",
-            "url": "https://lokalise.com/careers/#grnhse_app_section",
-            "available_from": "2026-08-30",
-            "type": "Company"
-        },
-        {
             "name": "HelpScout",
             "url": "https://www.helpscout.com/company/careers/",
             "available_from": "2026-08-30",
@@ -179,12 +167,6 @@
         {
             "name": "ElevenLabs",
             "url": "https://elevenlabs.io/careers?department=Engineering+%26+Product&location=Brazil",
-            "available_from": "2026-08-30",
-            "type": "Company"
-        },
-        {
-            "name": "WorkOS",
-            "url": "https://workos.com/careers#open-positions",
             "available_from": "2026-08-30",
             "type": "Company"
         },
@@ -257,12 +239,6 @@
         {
             "name": "BeBanjo",
             "url": "https://www.bebanjo.com/company/careers",
-            "available_from": "2026-07-13",
-            "type": "Company"
-        },
-        {
-            "name": "Bitovi",
-            "url": "https://www.bitovi.com/about/jobs",
             "available_from": "2026-07-13",
             "type": "Company"
         },
@@ -359,12 +335,6 @@
         {
             "name": "PlexTV",
             "url": "https://www.plex.tv/careers/",
-            "available_from": "2026-07-13",
-            "type": "Company"
-        },
-        {
-            "name": "Quora",
-            "url": "https://jobs.ashbyhq.com/quora?departmentId=f2fc32f2-ac96-4385-9b66-6ca7feb3e9f1",
             "available_from": "2026-07-13",
             "type": "Company"
         },
