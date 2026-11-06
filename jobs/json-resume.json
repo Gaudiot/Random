@@ -4,7 +4,28 @@
         "label": "Mobile Software Engineer | iOS",
         "email": "gaudiot.dev@gmail.com",
         "phone": "+55 81 99665-1117",
-        "summary": "Software Engineer with 5+ years of experience in different industries such as mobility, cyber security, and igaming. Main technologies include Swift, SwiftUI, UIKit, XCTest, Flutter, and AI tools . Currently serving as an iOS Software Engineer at Uber, working on the Identity Verification team, a highly critical workflow responsible for verifying +40M users daily, identifying and preventing fraudsters, ensuring a frictionless verification flow, defining new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers. Regarding soft skills, usually described by co-workers as a very proactive team player, with great communication skills, besides a fast learner with a high level of attention to details, always focused on high-impact results. Notable achievements include reducing Server-Driven UI development time by ~60% (from ~5 to ~2 working days) by creating an AI agent skill that uses Figma MCP to turn designs into code, leveraging a harness to enforce codebase standards and generate automated tests, thus accelerating feature delivery while maintaining code quality.",
+        "summary": [
+            {
+                "topic": "about",
+                "description": "Software Engineer with 5+ years of experience in different industries such as mobility, cyber security, and igaming. "
+            },
+            {
+                "topic": "main_tech",
+                "description": "Main technologies include Node.js, Next.js, React, TypeScript, JavaScript, Golang, and AI tools."
+            },
+            {
+                "topic": "work",
+                "description": "Currently serving as a Software Engineer at Uber, working on the Identity Verification team, which manages a highly critical workflow responsible for handling over 40M users daily, leading projects to identify and prevent fraudsters, ensuring a frictionless UX, designing new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers."
+            },
+            {
+                "topic": "soft_skills",
+                "description": "Regarding soft skills, usually described by co-workers as a very proactive team player, with great communication skills, besides a fast learner with a high level of attention to details, always focused on high-impact results and willing to go the extra mile."
+            },
+            {
+                "topic": "achievement",
+                "description": "Notable achievements include reducing workflow development time by ~60% by building an AI agent that transforms designs into production-ready code following existing codebase standards and automated testing practices, accelerating feature delivery while maintaining code quality."
+            }
+        ],
         "location": {
             "city": "Sao Paulo",
             "countryCode": "BR"
@@ -27,9 +48,9 @@
             "endDate": "Present",
             "summary": "Currently serving as an iOS Software Engineer at Uber, working on the Identity Verification team, a highly critical workflow responsible for verifying +40M users daily, identifying and preventing fraudsters, ensuring a frictionless verification flow, defining new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers.",
             "highlights": [
-                "Reduced by ~60% (from ~5 to ~2 days) the Server-Driven UI development time by developing an AI agent skill integrated with Figma MCP and a testing harness to autonomously implement designs in Golang while following codebase standards.",
-                "Reduced by ~40% (from ~5 to ~3 days) the verification flow development time by designing a modular, backend-driven verification framework using Swift, SwiftUI, and Golang , enabling faster development and easier maintenance of verification flows.",
-                "Increased by ~6% (from ~153k to ~162k users) the user verification completion by redesigning the verification journey to reduce user friction, using Golang, Swift, and SwiftUI , with Grafana monitoring during a controlled rollout."
+                "Reduced by ~60% (from ~5 to ~2 days) Server-Driven UI (SDUI) development time by designing and building an AI agent capable of autonomously implementing new feature interfaces by leveraging reusable components from an in-house SDUI framework, existing codebase patterns, Figma MCP integration, and an automated testing harness, using Go, gRPC, Cursor, Claude, and AI development tools, ultimately accelerating feature delivery while ensuring consistency with existing architectural and UI standards.",
+                "Reduced by ~40% (from ~5 to ~3 days) identity verification flow development time by designing and implementing a modular, backend-driven verification framework that enabled engineers to independently add, modify, or remove verification flows without extensive code changes, using Swift, SwiftUI, Go, gRPC, Xcode, and Claude, ultimately accelerating feature delivery, simplifying maintenance, and improving the scalability of the identity verification system.",
+                "Increased by ~2.4% (from 82% to 84%) the completion rate of Brazil's National ID verification flow by proactively identifying UX improvement opportunities and redesigning the verification process to reduce user friction while maintaining a high level of identity assurance, using Swift, SwiftUI, Go, gRPC, Cursor, and Claude, ultimately delivering a smoother and more secure user experience."
             ],
             "keywords": [
                 "Swift",
@@ -50,9 +71,9 @@
             "startDate": "2024-06",
             "endDate": "2025-03",
             "highlights": [
-                "Prevented +$6M in potential losses by taking technical ownership of a critical regulatory project, coordinating engineers, breaking down milestones into tasks, and working with Product and Legal teams to prioritize requirements using Next.js, React, TypeScript, and Flutter .",
-                "Increased by ~20% (from ~123k to ~148k users) the paying user base by proactively identifying and redesigning the product discovery experience, making it easier for users to find relevant content using Next.js, React, TypeScript, and Flutter .",
-                "Reduced by ~43% (from ~7 to ~4 days) the feature delivery time by implementing a Server-Driven UI framework in Flutter , allowing engineers to launch, modify, or remove UI features remotely with fast rollbacks and no app store resubmissions."
+                "Prevented over $6M in potential losses by serving as Tech Lead on a legally mandated project, collaborating with stakeholders, legal teams, and management to define requirements, prioritize must-have and nice-to-have features, establish milestones, and break down tasks to meet a tight deadline, using Next.js, React, TypeScript, Flutter, Cursor, and Claude, ultimately ensuring regulatory compliance and uninterrupted application access for users.",
+                "Increased the paying user base by ~17% (from ~123K to ~144K users) by proactively identifying and implementing UX improvements to streamline product discovery within the platform, using Next.js, React, TypeScript, Flutter, Cursor, and Claude, thus making it easier for users to discover new products.",
+                "Reduced by ~35% (from ~7 to ~4.5 days) the time required to update application UIs by implementing a new Server-Driven UI framework that enabled engineers to modify application interfaces through backend configurations, independently of the installed app version, using Next.js, TypeScript, JavaScript, Flutter, Cursor, Claude, and gRPC, thus enabling faster resolution of UI bugs without waiting for App Store or Play Store approval or requiring users to update their applications."
             ],
             "keywords": [
                 "Next.js",
@@ -70,8 +91,8 @@
             "startDate": "2022-07",
             "endDate": "2024-06",
             "highlights": [
-                "Increased by ~5% (from 4.5 to 4.7 out of 5) the NPS score by implementing a new chatbot version which uses LangChain and AI tools to fetch user and company information to provide a more custom service , using Node.js, TypeScript, JavaScript, and AI tools .",
-                "Fixed a critical bug that caused users to receive duplicate WhatsApp bulk messages by implementing idempotency keys to prevent duplicate message registrations and deliveries, using Node.js, TypeScript, JavaScript, and MongoDB ."
+                "Increased by ~5% (from 4.5 to 4.7 out of 5) the NPS score by leading the design and implementation of a new version of an AI-powered chatbot capable of retrieving user and company information to provide direct, accurate, and personalized responses, using Node.js, TypeScript, MongoDB, LangChain, Cursor, and Copilot, thus reducing friction during user interactions.",
+                "Resolved a critical bug that caused scheduled messages to be sent multiple times to the same user by conducting root cause analysis and implementing a new idempotency strategy that ensured each event was registered only once and prevented messages from being sent to users who had already received a message with the same ID, using Node.js, TypeScript, JavaScript, MongoDB, Cursor, and Copilot, ultimately improving client relationships by preventing unwanted interactions."
             ],
             "keywords": [
                 "Node.js",
@@ -79,6 +100,9 @@
                 "JavaScript",
                 "LangChain",
                 "AI tools",
+                "Cursor",
+                "Copilot",
+                "Git/GitHub",
                 "MongoDB",
                 "Idempotency"
             ]
@@ -91,7 +115,7 @@
             "startDate": "2022-01",
             "endDate": "2022-07",
             "highlights": [
-                "Increased by ~4% (from $33.8M to $35.2M) the annual gross revenue by building an automated quote generation service in Golang , allowing customers to request project estimates without human assistance."
+                "Increased annual gross revenue by ~1% (from $33.8M to $34.3M) by building an automated quote generation feature that processes user requirements and generates service cost estimates, using Go, Next.js, React, and TypeScript, thus enabling clients to quickly obtain project estimates without requiring human assistance."
             ],
             "keywords": [
                 "Golang",
