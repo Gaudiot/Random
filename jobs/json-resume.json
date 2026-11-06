@@ -42,7 +42,7 @@
         {
             "name": "Uber",
             "location": "Sao Paulo, SP, Brazil (Hybrid)",
-            "description": "Global technology company operating one of the world's leading mobility, delivery, and logistics platforms.",
+            "description": "Global technology company operating one of the world's leading mobility, delivery, and logistics platforms",
             "position": "iOS Software Engineer | Mobile",
             "startDate": "2025-03",
             "endDate": "Present",
@@ -50,7 +50,7 @@
             "highlights": [
                 "Reduced by ~60% (from ~5 to ~2 days) Server-Driven UI (SDUI) development time by designing and building an AI agent capable of autonomously implementing new feature interfaces by leveraging reusable components from an in-house SDUI framework, existing codebase patterns, Figma MCP integration, and an automated testing harness, using Go, gRPC, Cursor, Claude, and AI development tools, ultimately accelerating feature delivery while ensuring consistency with existing architectural and UI standards.",
                 "Reduced by ~40% (from ~5 to ~3 days) identity verification flow development time by designing and implementing a modular, backend-driven verification framework that enabled engineers to independently add, modify, or remove verification flows without extensive code changes, using Swift, SwiftUI, Go, gRPC, Xcode, and Claude, ultimately accelerating feature delivery, simplifying maintenance, and improving the scalability of the identity verification system.",
-                "Increased by ~2.4% (from 82% to 84%) the completion rate of Brazil's National ID verification flow by proactively identifying UX improvement opportunities and redesigning the verification process to reduce user friction while maintaining a high level of identity assurance, using Swift, SwiftUI, Go, gRPC, Cursor, and Claude, ultimately delivering a smoother and more secure user experience."
+                "Increased by ~2% (from 82% to 84%) the completion rate of Brazil's National ID verification flow by proactively identifying UX improvement opportunities and redesigning the verification process to reduce user friction while maintaining a high level of identity assurance, using Swift, SwiftUI, Go, gRPC, Cursor, and Claude, ultimately delivering a smoother and more secure user experience."
             ],
             "keywords": [
                 "Swift",
@@ -66,12 +66,12 @@
         {
             "name": "Rei do Pitaco",
             "location": "Sao Paulo, SP, Brazil (Remote)",
-            "description": "One of Brazil's leading homegrown iGaming and sports entertainment companies, originally built as the country's largest daily fantasy sports platform.",
+            "description": "One of Brazil's leading homegrown iGaming and sports entertainment companies, originally built as the country's largest daily fantasy sports platform",
             "position": "Software Engineer | Mobile",
             "startDate": "2024-06",
             "endDate": "2025-03",
             "highlights": [
-                "Prevented over $6M in potential losses by serving as Tech Lead on a legally mandated project, collaborating with stakeholders, legal teams, and management to define requirements, prioritize must-have and nice-to-have features, establish milestones, and break down tasks to meet a tight deadline, using Next.js, React, TypeScript, Flutter, Cursor, and Claude, ultimately ensuring regulatory compliance and uninterrupted application access for users.",
+                "Prevented +$6M in potential losses by serving as Tech Lead on a legally mandated project, collaborating with stakeholders, legal teams, and management to define requirements, prioritize must-have and nice-to-have features, establish milestones, and break down tasks to meet a tight deadline, using Next.js, React, TypeScript, Flutter, Cursor, and Claude, ultimately ensuring regulatory compliance and uninterrupted application access for users.",
                 "Increased the paying user base by ~17% (from ~123K to ~144K users) by proactively identifying and implementing UX improvements to streamline product discovery within the platform, using Next.js, React, TypeScript, Flutter, Cursor, and Claude, thus making it easier for users to discover new products.",
                 "Reduced by ~35% (from ~7 to ~4.5 days) the time required to update application UIs by implementing a new Server-Driven UI framework that enabled engineers to modify application interfaces through backend configurations, independently of the installed app version, using Next.js, TypeScript, JavaScript, Flutter, Cursor, Claude, and gRPC, thus enabling faster resolution of UI bugs without waiting for App Store or Play Store approval or requiring users to update their applications."
             ],
@@ -86,7 +86,7 @@
         {
             "name": "Elife Monitor",
             "location": "Recife, PE, Brazil (Remote)",
-            "description": "Global customer experience and market intelligence company specializing in Social CRM, conversational solutions, and digital customer engagement.",
+            "description": "Global customer experience and market intelligence company specializing in Social CRM, conversational solutions, and digital customer engagement",
             "position": "Software Developer | Backend",
             "startDate": "2022-07",
             "endDate": "2024-06",
@@ -126,7 +126,7 @@
         {
             "name": "UFPE",
             "location": "Recife, PE, Brazil",
-            "description": "Top-5 Computer Science program in Brazil and a leading technology and research center in Latin America.",
+            "description": "Top-5 Computer Science program in Brazil and a leading technology and research center in Latin America",
             "position": "Software Developer | Instructor",
             "startDate": "2021-02",
             "endDate": "2022-01",
