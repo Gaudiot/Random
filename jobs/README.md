@@ -92,7 +92,7 @@ The agent reads the job description, your profile, and the Word template. It cre
 
 Related experience can remain when useful. For example, Flutter can support a mobile application that asks for React Native, but the CV must still say Flutter. The agent must not claim you know a requested technology that is missing from your profile.
 
-The original profile and template stay unchanged. The generated CV is saved in `jobs`, using the output name configured in the agent. Existing CVs are preserved with a numbered filename when needed. The agent reports skill gaps and validation results; any coverage estimate is not a guaranteed employer ATS score.
+The original profile and template stay unchanged. The generated CV is saved in `jobs`, using the output name configured in the agent. For later requests about the same company, the agent can update that company's existing CV after validating a temporary copy. It must leave other companies' CVs unchanged. A separate version is created only when requested or needed to avoid replacing an ambiguous file. The agent reports skill gaps and validation results; any coverage estimate is not a guaranteed employer ATS score.
 
 Neither agent submits applications for you. Finding jobs and building a CV are separate requests.
 
