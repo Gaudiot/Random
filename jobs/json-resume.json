@@ -15,7 +15,11 @@
             },
             {
                 "topic": "work",
-                "description": "Currently serving as a Software Engineer at Uber, working on the Identity Verification team, which manages a highly critical workflow responsible for handling over 40M users daily, leading projects to identify and prevent fraudsters, ensuring a frictionless UX, designing new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers."
+                "description": "Has served as a Software Engineer at Uber on the Identity Verification team, which manages a highly critical workflow responsible for handling over 40M users daily, leading projects to identify and prevent fraudsters, ensuring a frictionless UX, designing new verification methods and frameworks, with a strong focus on AI-driven solutions, and mentoring entry-level engineers."
+            },
+            {
+                "topic": "ai_usage",
+                "description": "Active AI exploration across the software development lifecycle through MCP integrations for ticket discovery, harnesses to validate functionality and enable access to external tools, AI-assisted code reviews, and custom agents to automate repetitive tasks, while using AI as a second perspective when evaluating roadmap priorities and architectural decisions."
             },
             {
                 "topic": "soft_skills",
