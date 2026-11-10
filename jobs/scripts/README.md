@@ -1,4 +1,33 @@
-# Scripts do role-finder
+# Scripts de apoio
+
+## Estimar linhas e páginas de um texto
+
+```powershell
+python jobs/scripts/estimate_text_layout.py --text "Texto de um bloco do currículo."
+python jobs/scripts/estimate_text_layout.py --file jobs/job-description.txt
+Get-Content -Raw jobs/job-description.txt | python jobs/scripts/estimate_text_layout.py
+```
+
+Aceita texto direto, arquivo de texto UTF-8 ou entrada padrão e retorna JSON com
+`total_lines`, `total_pages`, `page_equivalent` e `word_count`. Não modifica arquivos.
+Também pode ser importado: `estimate_text_layout(text)`.
+
+O padrão é **52 linhas por página** e **15,5 palavras por linha**, a média entre
+15 e 16. Cada quebra explícita começa outra linha; uma linha longa ocupa
+`ceil(palavras / 15,5)` linhas. Linhas vazias ou apenas com espaços contam como
+uma linha. Texto vazio ocupa zero linhas. Uma quebra final apenas encerra a
+última linha: `texto\n` ocupa uma linha e `texto\n\n` ocupa duas.
+
+`total_pages` arredonda para cima: 53 linhas precisam de duas páginas.
+`page_equivalent` mostra a fração ocupada (53/52 = 1,0192).
+Use `--words-per-line 15` ou `--words-per-line 16` para outras estimativas;
+`--lines-per-page` também pode ser configurado.
+
+Esta é uma estimativa por palavras, sem medir fonte, largura, margens ou estilos.
+Ela ajuda a planejar um texto ou bloco, mas não substitui a renderização do DOCX
+no Word para confirmar o limite de duas páginas.
+
+## Scripts do role-finder
 
 Requerem Python 3.10+ e usam apenas a biblioteca padrão. Execute os comandos abaixo na raiz do repositório. Os caminhos de entrada padrão são resolvidos em relação aos scripts; `--output`, `--selection`, `--source` e `--roles` explícitos são relativos ao diretório de execução.
 
