@@ -1,0 +1,20 @@
+- N+1 é um problema super comum em banco de dados que pode tornar muito difícil de escalar
+- Um exemplo: Pegar todos os usuários e os seus pets
+    * Para resolver você pode pegar todos os usuários 
+    * Depois, para cada usuário, fazer uma query buscando os pets daquele usuário
+    * Logo são N+1 queries
+Esse problema pode tornar difícil escalar seu banco de dados por estar fazendo mais queries do que o necessário.
+Isso causa muito tráfego desnecessário entre a aplicação e o banco de dados. Podendo causar a degradação do serviço (como um funcionamento mais lento da API) e overload do servidor.
+- Algumas formas de resolver:
+    * Realizar a query com um JOIN (1 query)
+        # SELECT students.*, courses.*
+        # FROM students
+        # LEFT JOIN courses ON students.id = courses.student_id; 
+    * Caching
+    * Batching queries (2 query)
+        # SELECT * FROM courses WHERE student_id IN (1, 2, 3, 4, 5); 
+    * Eager loading
+- Esse problema não lança erros. Só se descobre (após análise) ele quando o sistema fica sobrecarregado.
+- ORM costumam causar isso devido a lazy loading. Mas também todas as maiores ORM tem soluções para esse problema, pesquise na documentação
+- Um problema similar pode acontecer na comunicação frontend->backend. No caso fazendo N+1 requisições API para o backend.
+- Uma forma de identificar o problema é rodar requisições de testes e ver se a quantidade de queries realizadas no banco cresce de forma linear com a quantidade de requisições.

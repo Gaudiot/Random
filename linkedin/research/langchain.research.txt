@@ -1,0 +1,22 @@
+- LangChain é um framework open-source que facilita a construção de aplicações que se utilizam de modelos de LLM (como o chatGPT)
+- Permite criar Chatbots inteligente, agentes especializados
+- LangChain oferece ferramentas para gerenciar os prompts, a cadeia de processamento (chamada de Chains), a memória (que mantém o contexto da conversa), integração com diferentes LLMs e com a memória local da máquina
+- Conecta LLMs com ferramentas, dados e “reasoning steps”
+- Se tornou o padrão de mercado para interagir com LLMs ao invés de só enviar prompts
+- LangChain é composto por várias “chains”, que são basicamente pipelines. Cada etapa da pipeline recebe um input, faz o processamento, limpa dados e etc, e passa o resultado para a próxima etapa da cadeia.
+- Modelos de LLMs, prompts e output parser são modulares, assim tornando fácil de substituir quando necessário
+- Com LangChain é possível criar templates de prompts onde podemos injetar variáveis. Assim evitando ter que refazer seu prompt todas as vezes.
+Ex: “Create flash cards so I can study for my {subject} class”
+
+- A LLM sabe muita coisa, mas não sabe de tudo. E ele por sí só não consegue lembrar do que já foi conversado. Só sabe no que foi treinado. Então para buscar status de um pedido é necessário de um agente que consiga: Lembrar de interações passadas, acessar informações da empresa, gerenciar esses fluxos.
+- LLMs são ótimos para responder dúvidas de contexto geral, mas tem dificuldade para contextos específicos 
+- O LangChain integra LLM, agente, memória, ferramentas e uma chain para uma consulta complexa. Isso permite usar LLMs sem precisar retreinar ou fazer fine-tuning 
+- O LangChain cria uma sequencia de passos para poder realizar o que foi pedido.
+- Podemos definir os componentes do LangChain como
+    * Interface LLM
+    * Prompt Template
+    * Ferramentas
+    * Agentes
+    * Memória
+    * Callbacks (para acompanhar com logs cada etapa da chain)
+

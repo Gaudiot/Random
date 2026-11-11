@@ -40,6 +40,7 @@ def fetch_html(url: str) -> str:
         ["curl", "-sL", "--max-time", "30", "-A", USER_AGENT, url],
         capture_output=True,
         text=True,
+        encoding="utf-8",
     )
     if result.returncode != 0:
         raise RuntimeError(f"curl exited {result.returncode}: {result.stderr.strip()}")
@@ -88,14 +89,14 @@ def main() -> int:
     args = parser.parse_args()
 
     today = date.today()
-    paths = sorted(RESULT_DIR.glob("*.result.json"))
+    paths = sorted(RESULT_DIR.glob("*.json"))
     if args.topics:
         wanted = set(args.topics)
-        paths = [p for p in paths if p.name.removesuffix(".result.json") in wanted]
+        paths = [p for p in paths if p.stem.removesuffix(".result") in wanted]
 
     exit_code = 0
     for path in paths:
-        slug = path.name.removesuffix(".result.json")
+        slug = path.stem.removesuffix(".result")
         data = json.loads(path.read_text(encoding="utf-8"))
         published = date.fromisoformat(data["published_at"])
         updated = date.fromisoformat(data["updated_at"])

@@ -1,0 +1,16 @@
+HTTP QUERY
+
+- A 4 meses atrás um novo método HTTP chegou após 16 anos sem atualizações nos verbos HTTP
+- Por ser novo ainda poderá demorar até entrar em produção para navegadores, proxies e outros (Expectativa para 2027-2028)
+- O método GET era usado para buscar informações (ex: [GET] /cars)
+- Caso precisasse de uma busca mais específica normalmente são usados path params para isso (ex: [GET] /cars?year=2026&max_price=250000&max_milage=78000&color=black).
+- Porém uma URL tem limite, normalmente até 8000 caracteres, assim impedindo de colocar vários filtros. É até possível considerar enviar essas informações pelo body ao invés da URL, mas por definição o método GET não aceita esse corpo, dessa forma a informação enviada no corpo é perdida até chegar no servidor (e em alguns podendo até mesmo ser bloqueada a requisição antes de chegar ao servidor)
+- Muitos desenvolvedores burlavam esse sistema usando o método POST que aceita o envio de um body. Porém, o método POST foi criado pensando na criação de entidades no servidor. Então, além de não ser idiomático também dificulta fazer o cache da requisição
+- O método QUERY vem para juntar o melhor dos dois mundos. Onde basicamente será uma requisição GET, mas que aceita ter um body. Como o body aceita mais dados nos livramos da limitação da URL, e como o QUERY é um método de leitura facilita o caching.
+- No caching de QUERY a chave vai ser uma junção da URL com o body e qualquer metada visto que apenas a URL não a torna mais única. Também fica recomendado nesses casos usar o “Vary” no header da requisição para indicar ao cache que precisará ser usado mais do que apenas a URL.
+- No caso a seguir o “Vary” sinaliza que só será considerado um hit no cache se os valores dos campos forem os mesmo:
+Vary: Accept-Query, Content-Encoding, Content-Type
+- Outra forma de fazer esse cache é com “URI for the request”, aonde após ser feito o QUERY será retornado um endpoint que poderá ser chamado de novo com o método GET e irá executar a mesma query, e retornará os dados atualizados se for o caso
+- Esse método também é idempotente pois realizar N chamadas terá o mesmo efeito no servidor do que realizar uma única chamada. Assim permitindo fazer retries da requisição até dar certo.
+- Isso não quer dizer que QUERY sempre deva ser usado no lugar de GET. Quando o recurso a ser buscado for bem definido ou se a query for pequena suficiente para caber na URL é mais fácil usar QUERY para favoritar página, fazer linkagem e até de fazr cache.
+- Deixe QUERY para casos em que a consulta é demasiadamente grande para a URL ou dados que não deveriam ficar expostos na URI
